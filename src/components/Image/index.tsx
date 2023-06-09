@@ -1,5 +1,5 @@
 // @refresh reset
-import styled, { keyframes, StyledComponent } from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 interface ImageProps {
   id: string;
@@ -26,13 +26,13 @@ const ImageElement = styled.img`
   width: 100%;
   height: 100%;
   animation-name: ${slideDown};
-  animation-duration: 500ms;
+  animation-duration: 300ms;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
   animation-delay: ${(props) => props.delay}ms;
 `;
 
-const Image = ({ id, direction, delay }: ImageProps) => (
+const Image = ({ id, direction, delay = 0 }: ImageProps) => (
   <ImageContainer>
     <ImageElement
       src={`http://jpcandelier.com/img/${id}`}

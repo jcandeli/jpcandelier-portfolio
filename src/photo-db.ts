@@ -3,6 +3,15 @@ import { Photo } from "@/types";
 const photos: Photo[] = [
   {
     type: "image",
+    id: "travel/422072087_22ea7f952a_b.jpg",
+    category: "travel",
+    title: "blind musician",
+    location: "Bangkok, Thailand",
+    camera: "Nikon D70",
+    orientation: "vertical",
+  },
+  {
+    type: "image",
     id: "travel/6300318366_0ef0aa65de_b.jpg",
     category: "travel",
     title: "Hermosa Beach",
@@ -19,20 +28,17 @@ const photos: Photo[] = [
   },
   {
     type: "image",
-    id: "travel/422072087_22ea7f952a_b.jpg",
-    category: "travel",
-    title: "blind musician",
-    location: "Bangkok, Thailand",
-    camera: "Nikon D70",
-    orientation: "vertical",
-  },
-  {
-    type: "image",
     id: "travel/4571721717_bb4f9da01a_b.jpg",
     category: "travel",
     title: "Astronomy park",
     location: "Jaipur, India",
     camera: "Olympus XA",
+    orientation: "horizontal",
+  },
+  {
+    type: "video",
+    title: "Anderson .Paak - Winners circle bass cover",
+    id: "9llqlSpLdRk",
     orientation: "horizontal",
   },
   {

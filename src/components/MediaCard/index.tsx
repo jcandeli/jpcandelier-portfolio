@@ -4,14 +4,14 @@ import Audio from "@/components/Audio";
 import Image from "@/components/Image";
 import { Media } from "@/types";
 
-interface MediaComponentProps {
+interface MediaCardProps {
   media: Media;
 }
 
-const MediaComponent = ({ media }: MediaComponentProps) => {
+const MediaCard = ({ media }: MediaCardProps) => {
   switch (media.type) {
     case "video":
-      return <Video id={media.id} />;
+      return <Video id={media.id} title={media.title} />;
     case "image":
       return <Image id={media.id} />;
     case "audio":
@@ -21,4 +21,4 @@ const MediaComponent = ({ media }: MediaComponentProps) => {
   }
 };
 
-export default MediaComponent;
+export default MediaCard;
