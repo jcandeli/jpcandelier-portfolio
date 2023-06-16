@@ -5,8 +5,9 @@ import TitleOverlay from "@/components/TitleOverlay";
 interface ImageProps {
   id: string;
   direction: "top" | "left";
-  delay: number;
-  title: string;
+  title: string | undefined;
+  camera: string | undefined;
+  location: string | undefined;
 }
 
 const ImageContainer = styled.div`
@@ -35,15 +36,13 @@ const ImageElement = styled.img`
   animation-duration: 300ms;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
-  animation-delay: ${(props) => props.delay}ms;
 `;
 
-const Image = ({ id, direction, title = "", delay = 0 }: ImageProps) => (
+const Image = ({ id, direction, title }: ImageProps) => (
   <ImageContainer>
     <ImageElement
       src={`http://jpcandelier.com/img/${id}`}
       alt={`Image with id ${id}`}
-      delay={delay}
     />
     <TitleOverlay>{title}</TitleOverlay>
   </ImageContainer>

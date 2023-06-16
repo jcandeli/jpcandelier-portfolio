@@ -13,9 +13,7 @@ export default function Home() {
     <Grid>
       {photos.map((photo: Photo) => (
         <GridItem key={photo.id} orientation={photo.orientation}>
-          <a onClick={() => setSelectedMedia(photo)}>
-            <MediaCard media={photo} />
-          </a>
+          <MediaCard media={photo} onClick={() => setSelectedMedia(photo)} />
         </GridItem>
       ))}
       {selectedMedia && (

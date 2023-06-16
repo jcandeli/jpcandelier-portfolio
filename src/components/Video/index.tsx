@@ -4,7 +4,7 @@ import { useState } from "react";
 
 interface VideoProps {
   id: string;
-  title: string;
+  title: string | undefined;
 }
 
 const VideoIcon = styled.img`

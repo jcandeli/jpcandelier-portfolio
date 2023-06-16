@@ -66,6 +66,10 @@ const photos: Photo[] = [
     camera: "Diana Camera",
   },
   {
+    type: "audio",
+    id: "",
+  },
+  {
     type: "image",
     id: "travel/4619264427_62b8a23c57_b.jpg",
     category: "travel",
@@ -144,7 +148,7 @@ const photos: Photo[] = [
     type: "image",
     id: "travel/4426186198_e77b78c700_o.jpg",
     category: "travel",
-    title: "backwaters",
+    title: "Karala backwaters",
     location: "Karala, India",
     camera: "Diana Camera",
   },
