@@ -1,4 +1,3 @@
-"use client";
 import styled, { StyledComponent } from "styled-components";
 
 const GRID_COLS = 3;

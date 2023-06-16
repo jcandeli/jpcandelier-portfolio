@@ -1,11 +1,21 @@
-"use client";
-import { useState } from "react";
 import styled from "styled-components";
+import TitleOverlay from "@/components/TitleOverlay";
+import { useState } from "react";
 
 interface VideoProps {
   id: string;
   title: string;
 }
+
+const VideoIcon = styled.img`
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  opacity: 60%;
+`;
 
 const ImageContainer = styled.div`
   width: 100%;
@@ -23,16 +33,6 @@ const ImageElement = styled.img`
   height: 100%;
 `;
 
-const VideoIcon = styled.img`
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 200px;
-  height: 200px;
-  opacity: 60%;
-`;
-
 const Video = ({ id, title }: VideoProps) => {
   const [showPlayer, setShowPlayer] = useState(false);
 
@@ -47,27 +47,13 @@ const Video = ({ id, title }: VideoProps) => {
           <ImageElement
             src={`https://img.youtube.com/vi/${id}/maxresdefault.jpg`}
             alt="Video Thumbnail"
-            onClick={handleClick}
           />
-          <div
-            style={{
-              position: "absolute",
-              top: "0",
-              left: "0",
-              width: "100%",
-              height: "100%",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              backgroundColor: "rgba(0,0,0,0.5)",
-              color: "white",
-              fontSize: "24px",
-              fontWeight: "bold",
-            }}
-          >
-            {title}
-          </div>
-          <VideoIcon src="video-icon.svg" alt="Play Video" />
+          <TitleOverlay onClick={handleClick}>{title}</TitleOverlay>
+          <VideoIcon
+            onClick={handleClick}
+            src="video-icon.svg"
+            alt="Play Video"
+          />
         </ImageContainer>
       )}
       {showPlayer && (

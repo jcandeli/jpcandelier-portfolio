@@ -7,7 +7,7 @@ const ModalOverlay = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.85);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,7 +15,7 @@ const ModalOverlay = styled.div`
 
 const ModalContent = styled.div`
   position: relative;
-  background-color: white;
+  background-color: transparent;
   width: 90%;
   max-width: 500px;
   height: 90vh;

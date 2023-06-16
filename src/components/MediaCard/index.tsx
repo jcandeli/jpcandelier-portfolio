@@ -1,7 +1,6 @@
-"use client";
-import Video from "@/components/Video";
 import Audio from "@/components/Audio";
 import Image from "@/components/Image";
+import Video from "@/components/Video";
 import { Media } from "@/types";
 
 interface MediaCardProps {
@@ -13,7 +12,7 @@ const MediaCard = ({ media }: MediaCardProps) => {
     case "video":
       return <Video id={media.id} title={media.title} />;
     case "image":
-      return <Image id={media.id} />;
+      return <Image id={media.id} title={media.title} alt={media.title} />;
     case "audio":
       return <Audio id={media.id} />;
     default:
