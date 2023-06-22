@@ -12,6 +12,7 @@ const TitleOverlay = styled.div`
   color: white;
   font-size: 36px;
   opacity: 0;
+  cursor: pointer;
 
   &:hover {
     opacity: 1;

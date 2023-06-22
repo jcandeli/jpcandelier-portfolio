@@ -14,7 +14,7 @@ export type Photo = GenericMedia & {
   home?: boolean;
 };
 
-export type Orinetation = "vertical" | "horizontal";
+export type Orinetation = "vertical" | "horizontal" | "banner" | "block";
 
 export type Type = "image" | "video" | "audio";
 
