@@ -10,7 +10,6 @@ const TitleOverlay = styled.div`
   display: flex;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
-  font-size: 36px;
   opacity: 0;
   cursor: pointer;
 

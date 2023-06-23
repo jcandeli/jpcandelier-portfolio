@@ -1,5 +1,5 @@
-// @refresh reset
 import styled, { keyframes } from "styled-components";
+import Title from "@/components/Title";
 import TitleOverlay from "@/components/TitleOverlay";
 
 interface ImageProps {
@@ -38,13 +38,15 @@ const ImageElement = styled.img`
   animation-fill-mode: forwards;
 `;
 
-const Image = ({ id, direction, title }: ImageProps) => (
+const Image = ({ id, title }: ImageProps) => (
   <ImageContainer>
     <ImageElement
       src={`http://jpcandelier.com/img/${id}`}
       alt={`Image with id ${id}`}
     />
-    <TitleOverlay>{title}</TitleOverlay>
+    <TitleOverlay>
+      <Title>{title}</Title>
+    </TitleOverlay>
   </ImageContainer>
 );
 
