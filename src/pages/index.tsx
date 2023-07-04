@@ -1,4 +1,3 @@
-import Banner from "@/components/Banner";
 import Grid, { GridItem } from "@/components/Grid";
 import Image from "next/image";
 import MediaCard from "@/components/MediaCard";
@@ -13,17 +12,6 @@ export default function Home() {
   return (
     <>
       <Grid>
-        <Banner
-          photo={{
-            type: "image",
-            id: "travel/23229339384_b184c5b0d0_b.jpg",
-            category: "travel",
-            title: "Untitled",
-            camera: "Nikon D90",
-            orientation: "horizontal",
-          }}
-        />
-
         {photos.map((photo: Photo) => (
           <GridItem key={photo.id} orientation={photo.orientation}>
             <MediaCard media={photo} onClick={() => setSelectedMedia(photo)} />

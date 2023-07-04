@@ -3,6 +3,14 @@ import { Photo } from "@/types";
 const photos: Photo[] = [
   {
     type: "image",
+    id: "travel/23229339384_b184c5b0d0_b.jpg",
+    category: "travel",
+    title: "Untitled",
+    camera: "Nikon D90",
+    orientation: "banner",
+  },
+  {
+    type: "image",
     id: "travel/422072087_22ea7f952a_b.jpg",
     category: "travel",
     title: "blind musician",
