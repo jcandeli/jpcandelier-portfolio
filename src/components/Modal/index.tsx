@@ -7,21 +7,18 @@ const ModalOverlay = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.85);
   display: flex;
   justify-content: center;
   align-items: center;
+  backdrop-filter: blur(32px);
 `;
 
 const ModalContent = styled.div`
   position: relative;
   background-color: transparent;
-  width: 90%;
-  max-width: 500px;
-  height: 90vh;
+  width: 85%;
+  height: 85vh;
   overflow-y: auto;
-  border-radius: 5px;
-  padding: 20px;
 `;
 
 interface ModalProps {
@@ -35,9 +32,7 @@ const Modal = ({ isOpen, onClose, children }: ModalProps) => {
     <>
       {isOpen && (
         <ModalOverlay onClick={onClose}>
-          <ModalContent onClick={(e) => e.stopPropagation()}>
-            {children}
-          </ModalContent>
+          <ModalContent onClick={onClose}>{children}</ModalContent>
         </ModalOverlay>
       )}
     </>

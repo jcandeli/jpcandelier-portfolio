@@ -84,16 +84,19 @@ const Navigation = ({ activePage }: NavigationProps) => {
         {showFilters && (
           <>
             <li>
-              <FilterLink href="">Photos</FilterLink>
+              <FilterLink href="/">All</FilterLink>
             </li>
             <li>
-              <FilterLink href="">Videos</FilterLink>
+              <FilterLink href="/image">Photos</FilterLink>
             </li>
             <li>
-              <FilterLink href="">Music</FilterLink>
+              <FilterLink href="/video">Videos</FilterLink>
             </li>
             <li>
-              <FilterLink href="">Designs</FilterLink>
+              <FilterLink href="/audio">Music</FilterLink>
+            </li>
+            <li>
+              <FilterLink href="/designs">Designs</FilterLink>
             </li>
           </>
         )}

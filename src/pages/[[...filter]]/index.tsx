@@ -4,14 +4,19 @@ import MediaCard from "@/components/MediaCard";
 import Modal from "@/components/Modal";
 import photos from "@/photo-db";
 import { Media, Photo } from "@/types";
+import { useRouter } from "next/router";
 import { useState } from "react";
 
 export default function Home() {
   const [selectedMedia, setSelectedMedia] = useState<Media | null>();
+  const {
+    query: { filter },
+  } = useRouter();
 
   return (
     <>
       <Grid>
+        <h1>{filter}</h1>
         {photos.map((photo: Photo) => (
           <GridItem key={photo.id} orientation={photo.orientation}>
             <MediaCard media={photo} onClick={() => setSelectedMedia(photo)} />

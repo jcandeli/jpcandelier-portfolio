@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import Title from "@/components/Title";
 import TitleOverlay from "@/components/TitleOverlay";
 
@@ -11,31 +11,20 @@ interface ImageProps {
 }
 
 const ImageContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  background-color: #dadada;
+  display: flex;
+  height: 100%;
+  justify-content: center;
   overflow: hidden;
   position: relative;
-`;
-
-const slideDown = keyframes`
-  to {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    scale: 1.1;
-  }
+  width: 100%;
 `;
 
 const ImageElement = styled.img`
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   object-fit: cover;
   width: 100%;
   height: 100%;
-  animation-name: ${slideDown};
-  animation-duration: 300ms;
-  animation-timing-function: ease-in;
-  animation-fill-mode: forwards;
 `;
 
 const Image = ({ id, title }: ImageProps) => (
