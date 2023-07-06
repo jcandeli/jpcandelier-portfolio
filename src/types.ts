@@ -16,6 +16,6 @@ export type Photo = GenericMedia & {
 
 export type Orinetation = "vertical" | "horizontal" | "banner" | "block";
 
-export type Type = "image" | "video" | "audio";
+export type Type = "photo" | "video" | "music" | "design";
 
 export type Media = Video | Photo;

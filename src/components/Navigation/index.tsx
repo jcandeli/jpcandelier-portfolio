@@ -87,16 +87,16 @@ const Navigation = ({ activePage }: NavigationProps) => {
               <FilterLink href="/">All</FilterLink>
             </li>
             <li>
-              <FilterLink href="/image">Photos</FilterLink>
+              <FilterLink href="/photo">Photos</FilterLink>
             </li>
             <li>
               <FilterLink href="/video">Videos</FilterLink>
             </li>
             <li>
-              <FilterLink href="/audio">Music</FilterLink>
+              <FilterLink href="/music">Music</FilterLink>
             </li>
             <li>
-              <FilterLink href="/designs">Designs</FilterLink>
+              <FilterLink href="/design">Designs</FilterLink>
             </li>
           </>
         )}

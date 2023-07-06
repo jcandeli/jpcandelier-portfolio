@@ -2,24 +2,32 @@ import Grid, { GridItem } from "@/components/Grid";
 import Image from "next/image";
 import MediaCard from "@/components/MediaCard";
 import Modal from "@/components/Modal";
-import photos from "@/photo-db";
-import { Media, Photo } from "@/types";
+import media from "@/photo-db";
+import { Media } from "@/types";
 import { useRouter } from "next/router";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Home() {
   const [selectedMedia, setSelectedMedia] = useState<Media | null>();
+  const [filteredMedia, setFilteredMedia] = useState<Media[] | []>(media);
   const {
     query: { filter },
   } = useRouter();
 
+  useEffect(() => {
+    if (filter === undefined) {
+      setFilteredMedia(media);
+    } else {
+      setFilteredMedia(media.filter((m) => m.type === filter[0]));
+    }
+  }, [filter]);
+
   return (
     <>
       <Grid>
-        <h1>{filter}</h1>
-        {photos.map((photo: Photo) => (
-          <GridItem key={photo.id} orientation={photo.orientation}>
-            <MediaCard media={photo} onClick={() => setSelectedMedia(photo)} />
+        {filteredMedia.map((media: Media) => (
+          <GridItem key={media.id} orientation={media.orientation}>
+            <MediaCard media={media} onClick={() => setSelectedMedia(media)} />
           </GridItem>
         ))}
 

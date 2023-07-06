@@ -2,7 +2,7 @@ import { Photo } from "@/types";
 
 const photos: Photo[] = [
   {
-    type: "image",
+    type: "photo",
     id: "travel/23229339384_b184c5b0d0_b.jpg",
     category: "travel",
     title: "Untitled",
@@ -10,7 +10,7 @@ const photos: Photo[] = [
     orientation: "banner",
   },
   {
-    type: "image",
+    type: "photo",
     id: "travel/422072087_22ea7f952a_b.jpg",
     category: "travel",
     title: "blind musician",
@@ -19,7 +19,7 @@ const photos: Photo[] = [
     orientation: "vertical",
   },
   {
-    type: "image",
+    type: "photo",
     id: "travel/6300318366_0ef0aa65de_b.jpg",
     category: "travel",
     title: "Hermosa Beach",
@@ -27,7 +27,7 @@ const photos: Photo[] = [
     camera: "Diana Camera",
   },
   {
-    type: "image",
+    type: "photo",
     id: "travel/3257423319_7b723c6320_b.jpg",
     category: "travel",
     title: "White temple",
@@ -35,7 +35,7 @@ const photos: Photo[] = [
     camera: "Diana Camera",
   },
   {
-    type: "image",
+    type: "photo",
     id: "travel/4571721717_bb4f9da01a_b.jpg",
     category: "travel",
     title: "Astronomy park",
@@ -50,7 +50,7 @@ const photos: Photo[] = [
     orientation: "horizontal",
   },
   {
-    type: "image",
+    type: "photo",
     id: "life/23446229681_fcfcb9d7d3_b.jpg",
     category: "life",
     title: "Untitled",
@@ -58,7 +58,7 @@ const photos: Photo[] = [
     orientation: "vertical",
   },
   {
-    type: "image",
+    type: "photo",
     id: "travel/3272890577_a2d4fb7fef_b.jpg",
     category: "travel",
     title: "Doi Suthep",
@@ -66,7 +66,7 @@ const photos: Photo[] = [
     camera: "Diana Camera",
   },
   {
-    type: "image",
+    type: "photo",
     id: "travel/3269066068_0d308a7f1a_b.jpg",
     category: "travel",
     title: "Untitled",
@@ -74,11 +74,11 @@ const photos: Photo[] = [
     camera: "Diana Camera",
   },
   {
-    type: "audio",
+    type: "music",
     id: "",
   },
   {
-    type: "image",
+    type: "photo",
     id: "travel/4619264427_62b8a23c57_b.jpg",
     category: "travel",
     title: "untitled",
@@ -87,7 +87,7 @@ const photos: Photo[] = [
     orientation: "horizontal",
   },
   {
-    type: "image",
+    type: "photo",
     id: "travel/4405365546_e1002b5010_b.jpg",
     category: "travel",
     title: "Pallam Slum",
@@ -96,7 +96,7 @@ const photos: Photo[] = [
     orientation: "horizontal",
   },
   {
-    type: "image",
+    type: "photo",
     id: "travel/3299396187_97ccd37f7b_b.jpg",
     category: "travel",
     title: "Stupa",
@@ -104,7 +104,7 @@ const photos: Photo[] = [
     camera: "Diana Camera",
   },
   {
-    type: "image",
+    type: "photo",
     id: "travel/3328489362_3d5ae9bfcb_b.jpg",
     category: "travel",
     title: "Novice",
@@ -112,7 +112,7 @@ const photos: Photo[] = [
     camera: "Kiev 60 TTL",
   },
   {
-    type: "image",
+    type: "photo",
     id: "travel/190747690_73868f6030_o.jpg",
     category: "travel",
     title: "untitled",
@@ -120,7 +120,7 @@ const photos: Photo[] = [
     camera: "Holga",
   },
   {
-    type: "image",
+    type: "photo",
     id: "travel/3328487560_0e6a9d531b_b.jpg",
     category: "travel",
     title: "school kids",
@@ -128,7 +128,7 @@ const photos: Photo[] = [
     camera: "Kiev 60 TTL",
   },
   {
-    type: "image",
+    type: "photo",
     id: "travel/23850487005_2f01363c08_b.jpg",
     category: "travel",
     title: "Untitled",
@@ -136,7 +136,7 @@ const photos: Photo[] = [
     orientation: "vertical",
   },
   {
-    type: "image",
+    type: "photo",
     id: "travel/4126993858_c1373fd1d3_b.jpg",
     category: "travel",
     title: "orphans",
@@ -145,7 +145,7 @@ const photos: Photo[] = [
     orientation: "horizontal",
   },
   {
-    type: "image",
+    type: "photo",
     id: "travel/2419658284_e6be1581cd.jpg",
     category: "travel",
     title: "untitled",
@@ -153,7 +153,7 @@ const photos: Photo[] = [
     camera: "Kiev 60 TTL",
   },
   {
-    type: "image",
+    type: "photo",
     id: "travel/4426186198_e77b78c700_o.jpg",
     category: "travel",
     title: "Karala backwaters",
@@ -161,7 +161,7 @@ const photos: Photo[] = [
     camera: "Diana Camera",
   },
   {
-    type: "image",
+    type: "photo",
     id: "travel/425235929_45bb321eb5_b.jpg",
     category: "travel",
     title: "Pai bus",
@@ -170,7 +170,7 @@ const photos: Photo[] = [
     orientation: "horizontal",
   },
   {
-    type: "image",
+    type: "photo",
     id: "travel/423216025_33d8943efe_o.jpg",
     category: "travel",
     title: "bamboo",
@@ -178,15 +178,15 @@ const photos: Photo[] = [
     camera: "Holga",
   },
   {
-    type: "image",
-    id: "travel/23229339384_b184c5b0d0_b.jpg",
+    type: "photo",
+    id: "life/23677757865_4cf39c45a4_b.jpg",
     category: "travel",
     title: "Untitled",
     camera: "Nikon D90",
     orientation: "horizontal",
   },
   {
-    type: "image",
+    type: "photo",
     id: "life/7730432316_f728bbff58_b.jpg",
     category: "life",
     title: "Sue",
@@ -195,7 +195,7 @@ const photos: Photo[] = [
     orientation: "vertical",
   },
   {
-    type: "image",
+    type: "photo",
     id: "life/66647806_d42b761c02_o.jpg",
     category: "life",
     title: "untitled",
@@ -203,7 +203,7 @@ const photos: Photo[] = [
     orientation: "vertical",
   },
   {
-    type: "image",
+    type: "photo",
     id: "life/3613778427_38b14696eb_b.jpg",
     category: "life",
     title: "untitled",
@@ -211,7 +211,7 @@ const photos: Photo[] = [
     camera: "Kiev 60 TTL",
   },
   {
-    type: "image",
+    type: "photo",
     id: "life/7737315806_a19e7af564_b.jpg",
     category: "life",
     title: "Sue",
@@ -220,7 +220,7 @@ const photos: Photo[] = [
     orientation: "vertical",
   },
   {
-    type: "image",
+    type: "photo",
     id: "life/182444495_f8da423932_b.jpg",
     category: "life",
     title: "Nedia",
@@ -228,7 +228,7 @@ const photos: Photo[] = [
     orientation: "vertical",
   },
   {
-    type: "image",
+    type: "photo",
     id: "life/2546430828_a764bee6be_o.jpg",
     category: "life",
     title: "Alex Toth",
@@ -236,7 +236,7 @@ const photos: Photo[] = [
     camera: "Kiev 60 TTL",
   },
   {
-    type: "image",
+    type: "photo",
     id: "bands/21601462960_81675438f1_h.jpg",
     category: "bands",
     title: "The Pham Entertainment Artists",
@@ -245,44 +245,35 @@ const photos: Photo[] = [
     orientation: "vertical",
   },
   {
-    type: "image",
+    type: "photo",
     id: "bands/2546592236_144d013dc2_o.jpg",
     category: "bands",
     title: "Rubblebucket",
     camera: "kiev 60 ttl",
   },
   {
-    type: "image",
+    type: "photo",
     id: "bands/3449012140_ebfbc1a8dc_b.jpg",
     category: "bands",
     title: "Myra Flynn",
     camera: "kiev 60 ttl",
   },
   {
-    type: "image",
+    type: "photo",
     id: "bands/4109568218_010e24e2e5_o.jpg",
     category: "bands",
     title: "Hunter and Fereale",
     camera: "Holga",
   },
   {
-    type: "image",
+    type: "photo",
     id: "bands/3544245534_5169922df9_b.jpg",
     category: "bands",
     title: "Rubblebucket",
     camera: "Kiev 60 TTL",
   },
   // {
-  //   type: "image",
-  //   id: "bands/24850613076_f51a6f30a1_b.jpg",
-  //   category: "bands",
-  //   title: "Justin Levinson",
-  //   location: "Los Angeles, CA",
-  //   camera: "Nikon D90",
-  //   orientation: "horizontal",
-  // },
-  // {
-  //   type: "image",
+  //   type: "photo",
   //   id: "travel/4364031123_ba885c6583_b.jpg",
   //   category: "travel",
   //   title: "Pallam Slum",
@@ -291,7 +282,7 @@ const photos: Photo[] = [
   //   orientation: "horizontal",
   // },
   // {
-  //   type: "image",
+  //   type: "photo",
   //   id: "travel/440709028_3f7682b065_b.jpg",
   //   category: "travel",
   //   title: "Wat Umong",
