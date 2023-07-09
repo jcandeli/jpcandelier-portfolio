@@ -1,8 +1,9 @@
 import Audio from "@/components/Audio";
+import Header from "@/components/Header";
 import Image from "@/components/Image";
 import Video from "@/components/Video";
-import { MouseEventHandler } from "react";
 import { Media } from "@/types";
+import { MouseEventHandler } from "react";
 
 interface MediaCardProps {
   media: Media;
@@ -17,7 +18,11 @@ const MediaCard = ({ media, onClick = () => {} }: MediaCardProps) => {
     case "design":
       return (
         <a onClick={onClick}>
-          <Image id={media.id} title={media.title} alt={media.title} />
+          <Image id={media.id} alt={media.title}>
+            <Header>{media.title}</Header>
+            {media.location && <h2>{media.location}</h2>}
+            {media.camera && <p>{media.camera}</p>}
+          </Image>
         </a>
       );
     case "music":

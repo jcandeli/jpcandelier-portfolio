@@ -1,13 +1,12 @@
 import styled from "styled-components";
-import Title from "@/components/Title";
+import Title from "@/components/Header";
 import TitleOverlay from "@/components/TitleOverlay";
+import { ReactNode } from "react";
 
 interface ImageProps {
   id: string;
   direction: "top" | "left";
-  title: string | undefined;
-  camera: string | undefined;
-  location: string | undefined;
+  children: ReactNode;
 }
 
 const ImageContainer = styled.div`
@@ -27,15 +26,13 @@ const ImageElement = styled.img`
   height: 100%;
 `;
 
-const Image = ({ id, title }: ImageProps) => (
+const Image = ({ id, children }: ImageProps) => (
   <ImageContainer>
     <ImageElement
       src={`http://jpcandelier.com/img/${id}`}
       alt={`Image with id ${id}`}
     />
-    <TitleOverlay>
-      <Title>{title}</Title>
-    </TitleOverlay>
+    <TitleOverlay>{children}</TitleOverlay>
   </ImageContainer>
 );
 

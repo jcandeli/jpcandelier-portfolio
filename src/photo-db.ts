@@ -272,24 +272,59 @@ const photos: Photo[] = [
     title: "Rubblebucket",
     camera: "Kiev 60 TTL",
   },
-  // {
-  //   type: "photo",
-  //   id: "travel/4364031123_ba885c6583_b.jpg",
-  //   category: "travel",
-  //   title: "Pallam Slum",
-  //   location: "Chennai, India",
-  //   camera: "Nikon D90",
-  //   orientation: "horizontal",
-  // },
-  // {
-  //   type: "photo",
-  //   id: "travel/440709028_3f7682b065_b.jpg",
-  //   category: "travel",
-  //   title: "Wat Umong",
-  //   location: "Chiang Mai, Thailand",
-  //   camera: "Nikon D70",
-  //   orientation: "horizontal",
-  // },
+  {
+    type: "video",
+    title: "Kiefer Why not? Bass Cover",
+    id: "2u8cAGSMFjE",
+    orientation: "horizontal",
+  },
+  {
+    type: "video",
+    title: "If These Walls Could Talk",
+    id: "X5thM_ze_a4",
+    orientation: "horizontal",
+  },
+  {
+    type: "video",
+    title: "Slum Village - 2U4U",
+    id: "mpcZOL9FwlA",
+    orientation: "horizontal",
+  },
+  {
+    type: "video",
+    title: "Jorja Smith Bass Cover",
+    id: "hXEyn5RnhUk",
+    orientation: "horizontal",
+  },
+  {
+    type: "video",
+    title: "Autumn Leaves",
+    id: "tx8BlCl24d4",
+    orientation: "horizontal",
+  },
+  {
+    type: "video",
+    title: "Slumn Village - Tell Me",
+    id: "xjaP1YyP3nU",
+    orientation: "horizontal",
+  },
+  {
+    type: "video",
+    title: "Slum Village - Get Dis Money",
+    id: "HvR63gjhI1c",
+    orientation: "horizontal",
+  },
+  {
+    type: "video",
+    title: "Voodoo Man",
+    id: "NbxYr3_i1SU",
+    orientation: "horizontal",
+  },
 ];
 
+// soundcloud.com/108villains/pepto?in=108villains/sets/for-ariana/s-Ahh29uxpf6c&si=13de373264c04281bfc3202fc7e16bff&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
+// soundcloud.com/108villains/take-your-time-ariana-blanco?si=4de322cd668b4d12893735eaf512073d&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
+//soundcloud.com/108villains/princess?si=0f61dfd338c34b9e96d4cbb51c2cc64a&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
+//soundcloud.com/108villains/stbb30-knockout-ned?si=1e99758281974675837bc02f7ea57c93&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
+//soundcloud.com/108villains/stbb-627-chicken-and-waffles?si=f01d03a02a2147e0ac102f1fb2971a8a&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
 export default photos;

@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
-import { useState } from "react";
+import { useState, useMemo } from "react";
+import { useRouter } from "next/router";
 
 const Nav = styled.nav`
   display: flex;
@@ -23,16 +24,6 @@ const NavList = styled.ul`
   gap: 2rem;
 `;
 
-const NavLink = styled(Anchor)`
-  font-size: 1.5rem;
-`;
-
-const FilterLink = styled(Anchor)`
-  font-size: 1rem;
-  letter-spacing: 2px;
-  color: #404040;
-`;
-
 const FilterList = styled.ul`
   display: flex;
   list-style: none;
@@ -42,12 +33,25 @@ const FilterList = styled.ul`
   gap: 1rem;
 `;
 
-interface NavigationProps {
-  activePage: string;
-}
+const FilterLink = styled(Anchor)`
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: ${(props) =>
+    props.href === props.activePage ? "#ea1573" : "#404040"};
+`;
 
-const Navigation = ({ activePage }: NavigationProps) => {
+const NavLink = styled(Anchor)`
+  font-size: 1.5rem;
+  color: "#404040";
+`;
+
+const Navigation = () => {
   const [showFilters, setShowFilters] = useState(false);
+  const {
+    query: { filter },
+  } = useRouter();
+
+  const activePage = filter ? `/${filter[0]}` : "/";
 
   const handleFilterClick = () => {
     setShowFilters(!showFilters);
@@ -84,19 +88,29 @@ const Navigation = ({ activePage }: NavigationProps) => {
         {showFilters && (
           <>
             <li>
-              <FilterLink href="/">All</FilterLink>
+              <FilterLink href="/" activePage={activePage}>
+                All
+              </FilterLink>
             </li>
             <li>
-              <FilterLink href="/photo">Photos</FilterLink>
+              <FilterLink href="/photo" activePage={activePage}>
+                Photos
+              </FilterLink>
             </li>
             <li>
-              <FilterLink href="/video">Videos</FilterLink>
+              <FilterLink href="/video" activePage={activePage}>
+                Videos
+              </FilterLink>
             </li>
             <li>
-              <FilterLink href="/music">Music</FilterLink>
+              <FilterLink href="/music" activePage={activePage}>
+                Music
+              </FilterLink>
             </li>
             <li>
-              <FilterLink href="/design">Designs</FilterLink>
+              <FilterLink href="/design" activePage={activePage}>
+                Designs
+              </FilterLink>
             </li>
           </>
         )}
