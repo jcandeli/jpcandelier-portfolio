@@ -28,10 +28,7 @@ const ImageElement = styled.img`
 
 const Image = ({ id, children }: ImageProps) => (
   <ImageContainer>
-    <ImageElement
-      src={`http://jpcandelier.com/img/${id}`}
-      alt={`Image with id ${id}`}
-    />
+    <ImageElement src={`/portfolio/photos/${id}`} alt={`Image with id ${id}`} />
     <TitleOverlay>{children}</TitleOverlay>
   </ImageContainer>
 );
